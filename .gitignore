@@ -1,0 +1,16 @@
+## Vim
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+## macOS
+
+# General
+.DS_Store
+
+# Icon must end with two \r
+Icon
+
