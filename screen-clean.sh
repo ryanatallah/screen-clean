@@ -17,6 +17,10 @@ function age() {
   echo $elapsed
 }
 
+if [ $DEBUG ]; then
+  echo "$(date): Beginning screen-clean"
+fi
+
 for path in $FILES
 do
   f=$(basename "$path")
@@ -26,7 +30,7 @@ do
     fi
     newpath=$SCREEN_FOLDER/$f
     mv "$path" "$newpath"
-    echo "$(date) $path -> $newpath" >> $LOG_FILE
+    echo "$(date): $path -> $newpath" >> $LOG_FILE
   fi
 done
 
